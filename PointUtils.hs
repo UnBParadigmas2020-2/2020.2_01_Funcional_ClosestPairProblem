@@ -1,3 +1,5 @@
+module PointUtils where
+
 import Data.List (sortBy)
 import Data.Ord (comparing)
 
