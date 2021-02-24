@@ -1,3 +1,4 @@
+
 main = do  
     arquivo <- readFile("testes.txt")
     let lista = (map (map read . words) . lines) arquivo :: [[Int]]
@@ -7,9 +8,9 @@ main = do
 
 separaLista [] = return()
 separaLista (h:t) = do
-    let passo = montaLista (head h) t
-    print passo
+    let subLista = montaSubLista (head h) t
+    print subLista
     separaLista (drop (head h) t)
 
-montaLista 0 lista = []
-montaLista n (h:t) = h: montaLista(n-1) t
+montaSubLista 0 lista = []
+montaSubLista n (h:t) = h: montaSubLista(n-1) t
