@@ -6,7 +6,6 @@ main = do
 
 
 separaLista [] = return()
-separaLista [[]] = return()
 separaLista (h:t) = do
     let passo = montaLista (head h) t
     print passo
