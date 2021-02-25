@@ -3,6 +3,7 @@ module ClosestPair where
 import PointUtils
 
 getMiddleIndexFromList :: [a] -> Int
+getMiddleIndexFromList [] = 0
 getMiddleIndexFromList lst = ceiling (fromIntegral(length lst) / 2) - 1
 
 getMiddleItemFromList :: [a] -> a

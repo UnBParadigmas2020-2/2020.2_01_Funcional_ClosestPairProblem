@@ -9,7 +9,7 @@ calcDistanceFromVector point result =  minimum [ euclidianDistance point pointB 
 
 calcClosestDistanceFromInputBruteForce :: [Point] -> Float
 calcClosestDistanceFromInputBruteForce [] =  10001
-calcClosestDistanceFromInputBruteForce [point] =  10001
-calcClosestDistanceFromInputBruteForce point =  minimum (calcDistanceFromVector x y : [calcClosestDistanceFromInputBruteForce y])
+calcClosestDistanceFromInputBruteForce [points] =  10001
+calcClosestDistanceFromInputBruteForce points =  minimum (calcDistanceFromVector x y : [calcClosestDistanceFromInputBruteForce y])
     where
-        (x:y) = point
+        x:y = points
