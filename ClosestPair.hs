@@ -1,3 +1,5 @@
+module ClosestPair where
+
 import PointUtils
 
 getMiddleIndexFromList :: [a] -> Int
@@ -11,11 +13,3 @@ halveArray a = (x, y)
     where 
         x = take ((getMiddleIndexFromList a) + 1) a
         y = drop ((getMiddleIndexFromList a) + 1) a
-
-
--- 10001 por ser o valor definido no URI
-closestPair :: [Point] -> Int
-closestPair [] = 10001
-closestPair [a] = 10001
-closestPair lst = 0
-    
