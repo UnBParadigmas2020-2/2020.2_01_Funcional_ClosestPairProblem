@@ -11,5 +11,5 @@ getMiddleItemFromList lst = lst !! getMiddleIndexFromList lst
 halveArray :: [a] -> ([a], [a])
 halveArray a = (x, y)
     where 
-        x = take ((getMiddleIndexFromList a) + 1) a
-        y = drop ((getMiddleIndexFromList a) + 1) a
+        x = take (getMiddleIndexFromList a + 1) a
+        y = drop (getMiddleIndexFromList a + 1) a
