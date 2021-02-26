@@ -1,4 +1,9 @@
-module PointUtils where
+module PointUtils
+( Point(..)
+, euclidianDistance
+, sortByX
+, sortByY
+) where
 
 import Data.List (sortOn)
 

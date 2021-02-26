@@ -1,6 +1,8 @@
-module ClosestPair where
-
-import PointUtils
+module ClosestPair
+( getMiddleIndexFromList
+, getMiddleItemFromList
+, halveArray
+) where
 
 getMiddleIndexFromList :: [a] -> Int
 getMiddleIndexFromList [] = 0

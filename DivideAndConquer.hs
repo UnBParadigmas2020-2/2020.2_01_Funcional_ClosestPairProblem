@@ -1,7 +1,7 @@
-module DivideAndConquer where
+module DivideAndConquer (calcClosestDistanceFromInputDAC, divideAndConquer) where
 
-import PointUtils
-import ClosestPair
+import PointUtils (Point(..))
+import ClosestPair (getMiddleIndexFromList)
 
 divideAndConquer points left right = 10001
     where

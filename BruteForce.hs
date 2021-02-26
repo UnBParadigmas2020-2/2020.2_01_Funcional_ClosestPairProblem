@@ -1,6 +1,9 @@
-module BruteForce where
+module BruteForce
+( calcDistanceFromVector
+, calcClosestDistanceFromInputBruteForce
+) where
 
-import PointUtils
+import PointUtils (Point(..), euclidianDistance)
 
 calcDistanceFromVector :: Point -> [Point] -> Float
 calcDistanceFromVector point [] =  10001
