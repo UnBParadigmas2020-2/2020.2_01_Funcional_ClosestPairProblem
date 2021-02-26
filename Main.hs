@@ -1,4 +1,6 @@
 
+import PointUtils
+
 main = do  
     file <- readFile("testes.txt")
     let list = (map (map read . words) . lines) file ::[[Int]]
