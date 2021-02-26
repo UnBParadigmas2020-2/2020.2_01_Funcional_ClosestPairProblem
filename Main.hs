@@ -1,16 +1,19 @@
 
+import Conversion
+
 main = do  
-    arquivo <- readFile("testes.txt")
-    let lista = (map (map read . words) . lines) arquivo :: [[Int]]
-    separaLista lista
-    print lista
+    file <- readFile("testes.txt")
+    let list = (map (map read . words) . lines) file ::[[Int]]
+    splitCases list
+    print list
 
 
-separaLista [] = return()
-separaLista (h:t) = do
-    let subLista = montaSubLista (head h) t
-    print subLista
-    separaLista (drop (head h) t)
+splitCases [] = return()
+splitCases (h:t) = do
+    let pointsList = getPointsList (head h) t
+    print(map listToPoint pointsList)
+    splitCases(drop (head h) t)
 
-montaSubLista 0 lista = []
-montaSubLista n (h:t) = h: montaSubLista(n-1) t
+
+getPointsList 0 lista = []
+getPointsList n (h:t) = h: getPointsList(n-1) t
