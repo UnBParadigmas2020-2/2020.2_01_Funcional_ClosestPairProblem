@@ -15,3 +15,16 @@ calcClosestDistanceFromInputDAC [points] =  10001
 calcClosestDistanceFromInputDAC points =  divideAndConquer points 0 lastIndex
     where
         lastIndex = length points - 1
+
+
+
+getMinAB:: [Point] -> [Point]                                                           -- Recebe Lista completa(ordenada em x) de Point's separa na metade
+getMinAB points = findListMin points:findListMin(drop middle points):[]                 -- e acha MinA(Point) e MinB(Point) e retorna [MinA, MinB]
+    where 
+        middle = getMiddleIndexFromList points ::Int
+
+findListMin points
+    | length points <= 1 = points!!0
+    | otherwise = findListMin (splitList middle points)
+    where 
+        middle = getMiddleIndexFromList points ::Int
