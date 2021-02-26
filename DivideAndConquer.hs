@@ -18,8 +18,8 @@ calcClosestDistanceFromInputDAC points =  divideAndConquer points 0 lastIndex
 
 
 
-getMinAB:: [Point] -> [Point]                                                           -- Recebe Lista completa(ordenada em x) de Point's separa na metade
-getMinAB points = findListMin points:findListMin(drop middle points):[]                 -- e acha MinA(Point) e MinB(Point) e retorna [MinA, MinB]
+getMinAB:: [Point] -> [Point]                                                           -- Recebe Lista completa(ordenada em x) de Point's separa na metade(a, b)
+getMinAB points = findListMin points:findListMin(drop middle points):[]                 -- e acha minA(Point) e minB(Point) e retorna [MinA, MinB]
     where 
         middle = getMiddleIndexFromList points ::Int
 
