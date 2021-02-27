@@ -19,8 +19,11 @@ splitTests (h:t) = do
     print(listaAB!!0)
     print "Lista B"
     print(listaAB!!1)
+    let minAB = calcClosestDistanceFromInputDAC list
     print "minA e minB"
-    print(calcClosestDistanceFromInputDAC list)
+    print(minAB)
     print "global_min"
---    print((sortByX listAB)!!0)
+    print(minAB!!0)
+    print "Lista completa sortedByY"
+    print (sortByY list)
     splitTests(drop (head h) t)
