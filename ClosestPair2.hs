@@ -12,7 +12,7 @@
 --sortByY = sortOn y
 
 import PointUtils (Point(..))
-points = [Point 0 2, Point 6 67, Point 43 71, Point 39 107, Point 189 140] ++ [Point 0 2, Point 6 67, Point 43 71, Point 39 107, Point 189 140]
+points = [Point 0 2, Point 6 67, Point 43 71, Point 39 107, Point 189 140]
 
 length' :: (Num b) => [a] -> b 
 length' [] = 0 
@@ -29,12 +29,13 @@ leftList a = x
         x = take (mid) a
 
 --o tamanho da minha lista r = points len - leftList len
---rightList :: [a] -> [a]
---rightList a = y
---    where 
---        y = take (mid) a
+
+rightList :: [a] -> [a]
+rightList a = y
+    where 
+        y = drop (mid) a  
 
 main = print(getMiddleIndexFromList points)
 l = leftList points
-llen = length' l
+r = rightList points
 --left = print(leftList points mid) 
