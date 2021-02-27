@@ -1,7 +1,6 @@
 import BruteForce
 import Text.Printf
-import DivideAndConquer
-import PointUtils (Point(..))
+import InputUtils
 
 main = do
     entries <- getLine
@@ -16,13 +15,3 @@ main = do
             else printf "%.4f\n" result
         main
 
-getAllEntries:: [String] -> [Point]
-getAllEntries values = map convertInputToPoint values
-
-getMultipleLines :: Int -> IO [String]
-getMultipleLines n
-    | n <= 0 = return []
-    | otherwise = do
-        x <- getLine
-        xs <- getMultipleLines (n-1)
-        return (x:xs)
