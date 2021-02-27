@@ -3,6 +3,8 @@ module PointUtils
 , euclidianDistance
 , sortByX
 , sortByY
+, convertInputToPoint
+, convertStringToFLoat
 ) where
 
 import Data.List (sortOn)
