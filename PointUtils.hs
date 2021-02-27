@@ -17,3 +17,12 @@ sortByX = sortBy (comparing x)
 
 sortByY :: [Point] -> [Point]
 sortByY = sortBy (comparing y)
+
+convertInputToPoint:: String -> Point
+convertInputToPoint input = Point x y
+    where
+        x = convertStringToFLoat $ head $ words input
+        y = convertStringToFLoat $ last $ words input
+
+convertStringToFLoat:: String -> Float
+convertStringToFLoat str = read str :: Float

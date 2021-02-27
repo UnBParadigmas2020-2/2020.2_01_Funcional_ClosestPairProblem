@@ -5,7 +5,7 @@ import PointUtils
 calcDistanceFromVector :: Point -> [Point] -> Float
 calcDistanceFromVector point [] =  10001
 calcDistanceFromVector point [pointb] =  euclidianDistance point pointb
-calcDistanceFromVector point result =  minimum [ euclidianDistance point pointB | pointB <- result]
+calcDistanceFromVector point pointList =  minimum [ euclidianDistance point pointB | pointB <- pointList]
 
 calcClosestDistanceFromInputBruteForce :: [Point] -> Float
 calcClosestDistanceFromInputBruteForce [] =  10001
