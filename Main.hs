@@ -1,6 +1,7 @@
 import BruteForce
-import PointUtils
 import Text.Printf
+import DivideAndConquer
+import PointUtils (Point(..))
 
 main = do
     entries <- getLine

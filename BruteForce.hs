@@ -1,6 +1,9 @@
-module BruteForce where
+module BruteForce
+( calcDistanceFromVector
+, calcClosestDistanceFromInputBruteForce
+) where
 
-import PointUtils
+import PointUtils (Point(..), euclidianDistance)
 
 calcDistanceFromVector :: Point -> [Point] -> Float
 calcDistanceFromVector point [] =  10001
@@ -9,7 +12,7 @@ calcDistanceFromVector point pointList =  minimum [ euclidianDistance point poin
 
 calcClosestDistanceFromInputBruteForce :: [Point] -> Float
 calcClosestDistanceFromInputBruteForce [] =  10001
-calcClosestDistanceFromInputBruteForce [point] =  10001
-calcClosestDistanceFromInputBruteForce point =  minimum ([calcDistanceFromVector x y] ++ [ calcClosestDistanceFromInputBruteForce y])
+calcClosestDistanceFromInputBruteForce [points] =  10001
+calcClosestDistanceFromInputBruteForce points =  minimum (calcDistanceFromVector x y : [calcClosestDistanceFromInputBruteForce y])
     where
-        (x:y) = point
+        x:y = points

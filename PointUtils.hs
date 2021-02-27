@@ -1,22 +1,25 @@
-module PointUtils where
+module PointUtils
+( Point(..)
+, euclidianDistance
+, sortByX
+, sortByY
+) where
 
-import Data.List (sortBy)
-import Data.Ord (comparing)
+import Data.List (sortOn)
 
-
-data Point = Point { x :: Float, y :: Float } deriving Show
+data Point = Point { x :: Float, y :: Float } deriving (Eq, Ord, Show)
 
 euclidianDistance :: Point -> Point -> Float
 euclidianDistance p1 p2 = sqrt (dx*dx + dy*dy)
     where
-        dx = (x p1) - (x p2)
-        dy = (y p1) - (y p2)
+        dx = x p1 - x p2
+        dy = y p1 - y p2
 
 sortByX :: [Point] -> [Point]
-sortByX = sortBy (comparing x)
+sortByX = sortOn x
 
 sortByY :: [Point] -> [Point]
-sortByY = sortBy (comparing y)
+sortByY = sortOn y
 
 convertInputToPoint:: String -> Point
 convertInputToPoint input = Point x y
@@ -26,3 +29,4 @@ convertInputToPoint input = Point x y
 
 convertStringToFLoat:: String -> Float
 convertStringToFLoat str = read str :: Float
+
