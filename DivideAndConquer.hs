@@ -15,7 +15,7 @@ findListMin points
     | otherwise = findListMin (splitList middle points)
     where 
         middle = getMiddleIndexFromList points ::Int
-		
+
 listAB:: [Point] -> [[Point]]
 listAB list = splitList middle list : drop middle list : []
     where 
