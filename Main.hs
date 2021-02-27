@@ -22,5 +22,5 @@ splitTests (h:t) = do
     print "minA e minB"
     print(calcClosestDistanceFromInputDAC list)
     print "global_min"
-    print((sortByX listAB)!!0)
+--    print((sortByX listAB)!!0)
     splitTests(drop (head h) t)
