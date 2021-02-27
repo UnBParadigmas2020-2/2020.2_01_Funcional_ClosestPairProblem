@@ -10,6 +10,9 @@ getMiddleIndexFromList :: [a] -> Int
 getMiddleIndexFromList [] = 0
 getMiddleIndexFromList lst = ceiling (fromIntegral(length lst) / 2)
 
+getMiddleItemFromList :: [a] -> a
+getMiddleItemFromList lst = lst !! getMiddleIndexFromList lst
+
 leftList :: [a] -> [a]
 leftList a = x
     where 
@@ -24,6 +27,11 @@ rightList a = y
 length' :: (Num b) => [a] -> b 
 length' [] = 0 
 length' xs = sum [1 | _ <- xs]
+
+
+closestPair :: [Point] -> [Point] -> [Point] -> Point
+closestPair 
+        
 
 --divide ordered px list in left and right lists
 let l = leftList px
