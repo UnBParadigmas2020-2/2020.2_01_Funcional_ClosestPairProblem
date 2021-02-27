@@ -23,6 +23,7 @@ sortByX = sortOn x
 sortByY :: [Point] -> [Point]
 sortByY = sortOn y
 
+--[Int]= lista de inteiro
 listToPoint:: [Int] -> Point
 listToPoint point = Point (fromIntegral (point!!0)) (fromIntegral (point!!1))
 

@@ -4,6 +4,7 @@ module ClosestPair
 , halveArray
 ) where
 
+--calcula o tamanho da metade lista
 getMiddleIndexFromList :: [a] -> Int
 getMiddleIndexFromList [] = 0
 getMiddleIndexFromList lst = ceiling (fromIntegral(length lst) / 2)
