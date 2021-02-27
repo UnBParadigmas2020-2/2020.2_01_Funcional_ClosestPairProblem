@@ -14,20 +14,27 @@
 import PointUtils (Point(..))
 points = [Point 0 2, Point 6 67, Point 43 71, Point 39 107, Point 189 140] ++ [Point 0 2, Point 6 67, Point 43 71, Point 39 107, Point 189 140]
 
+length' :: (Num b) => [a] -> b 
+length' [] = 0 
+length' xs = sum [1 | _ <- xs]
+
 getMiddleIndexFromList :: [a] -> Int
 getMiddleIndexFromList [] = 0
 getMiddleIndexFromList lst = ceiling (fromIntegral(length lst) / 2)
 
 mid = getMiddleIndexFromList points
-halveArray :: [a] -> [a]
-halveArray a = x
+leftList :: [a] -> [a]
+leftList a = x
     where 
         x = take (mid) a
-        --y = drop (getMiddleIndexFromList a + 1) a
 
-
-
+--o tamanho da minha lista r = points len - leftList len
+--rightList :: [a] -> [a]
+--rightList a = y
+--    where 
+--        y = take (mid) a
 
 main = print(getMiddleIndexFromList points)
-leftList = print(halveArray points)
+l = leftList points
+llen = length' l
 --left = print(leftList points mid) 
