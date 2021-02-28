@@ -14,6 +14,7 @@
 
 ## Sobre 
 Nosso grupo propos a implementação do código que resolve o problema clássico de pares mais próximos, com foco em resolver o problema no URI utilizando a linguagem haskell.
+
 Tivemos como referência os codigos presentes nesse repositório na pasta solucao_imperativa, nas linguagens python e C, ambos fornecidos pelo integrante Elias, que já havia resolvido o problema antes na disciplina de Projeto de Algoritmos. Implementamos a solução de duas formas diferentes, utilizando a força bruta, que possui complexidade O(n^2) e a estratégia de dividir para conquistar complexidade O(n log n).
 
 ## Screenshots
