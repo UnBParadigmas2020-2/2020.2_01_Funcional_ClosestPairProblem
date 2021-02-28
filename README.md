@@ -13,10 +13,9 @@
 | 16/0132550  |  Lorrany dos Santos Azevedo |
 
 ## Sobre 
-Nosso grupo propos a implementação do código que resolve o problema clássico de pares mais próximos, com foco em resolver o problema no URI utilizando a linguagem haskell.
+Nosso grupo propos a implementação do código que resolve o problema clássico de pares mais próximos, com foco em resolver o [problema no URI](https://www.urionlinejudge.com.br/judge/pt/problems/view/1295) utilizando a linguagem haskell.
 
-Tivemos como referência os códigos presentes nesse repositório na pasta __solucao_imperativa__, nas linguagens python e C, ambos fornecidos pelo integrante Elias, que já havia resolvido o problema antes na disciplina de Projeto de Algoritmos. Implementamos a solução de duas formas diferentes, utilizando a força bruta, que possui complexidade __O(n^2)__ e a estratégia de dividir para conquistar complexidade __O(n log n)__.
-
+Tivemos como referência os códigos presentes nesse repositório na pasta __solucao_imperativa__, nas linguagens python e C, ambos fornecidos pelo integrante Elias, que já havia resolvido o problema antes na disciplina de Projeto de Algoritmos. Implementamos a solução de duas formas diferentes, utilizando a força bruta, que possui complexidade __O(n^2)__ e a estratégia de dividir para conquistar, complexidade __O(n log n)__.
 
 A fim de compararmos a programação declarativa (funcional), com a programação imperativa também implementamos soluções brute force e _divide and conquer_ em Python e em c.
 
@@ -59,4 +58,4 @@ O vídeo de apresentação do projeto se encontra na pasta __assets/Projeto1.mp4
 Quaisquer outras informações sobre seu projeto podem ser descritas a seguir.
 
 ## Fontes
-Caso utilize materiais de terceiros, referencie-os adequadamente.
+- [https://github.com/projeto-de-algoritmos/D-C_Closest_pair_problem](https://github.com/projeto-de-algoritmos/D-C_Closest_pair_problem)
