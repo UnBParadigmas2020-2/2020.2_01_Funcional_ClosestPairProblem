@@ -6,24 +6,17 @@ import PointUtils (Point(..), sortByY, euclidianDistance, sortByX)
 import ClosestPair (getMiddleIndexFromList, halveArray, getMiddleItemFromList)
 import BruteForce (calcClosestDistanceFromInputBruteForce)
 
-divideAndConquer points left right = 10001
-    where
-        middle = getMiddleIndexFromList points
-        dacLeft = divideAndConquer points left middle
-        dacRight = divideAndConquer points (middle + 1) right
-
-points = [Point 0 2, Point 6 67, Point 43 71, Point 39 107, Point 189 140]
-
 calcClosestDistanceFromInputDAC :: [Point] -> (Float, [Point])
 calcClosestDistanceFromInputDAC [] =  (10001, [])
 calcClosestDistanceFromInputDAC [points] =  (10001, [points])
 calcClosestDistanceFromInputDAC points =  (realMin, s)
     where
-        s = sortByY (a ++ b)
+
+        s = sortByY sLimited
         minDistance = min minEsq minDir
         sLimited = getLeastDistanceIfLowerThan minDistance (getMiddleItemFromList points) points
         updateMin = calcClosestDistanceFromInputBruteForce sLimited
-        realMin = min updateMin ((trace $ show minDistance) ( minDistance ))
+        realMin = min updateMin minDistance
         (minEsq, a) = calcClosestDistanceFromInputDAC (left)
         (minDir, b) = calcClosestDistanceFromInputDAC (right)
         (left, right) = halveArray(points)
