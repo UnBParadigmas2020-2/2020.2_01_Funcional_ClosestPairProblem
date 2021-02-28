@@ -15,24 +15,45 @@
 ## Sobre 
 Nosso grupo propos a implementação do código que resolve o problema clássico de pares mais próximos, com foco em resolver o problema no URI utilizando a linguagem haskell.
 
-Tivemos como referência os codigos presentes nesse repositório na pasta solucao_imperativa, nas linguagens python e C, ambos fornecidos pelo integrante Elias, que já havia resolvido o problema antes na disciplina de Projeto de Algoritmos. Implementamos a solução de duas formas diferentes, utilizando a força bruta, que possui complexidade O(n^2) e a estratégia de dividir para conquistar complexidade O(n log n).
+Tivemos como referência os códigos presentes nesse repositório na pasta __solucao_imperativa__, nas linguagens python e C, ambos fornecidos pelo integrante Elias, que já havia resolvido o problema antes na disciplina de Projeto de Algoritmos. Implementamos a solução de duas formas diferentes, utilizando a força bruta, que possui complexidade __O(n^2)__ e a estratégia de dividir para conquistar complexidade __O(n log n)__.
 
- A fim de compararmos a programação declarativa (funcional), com a programação imperativa também implemetamos soluções brute force e divid and conquer em Python e em c.
+
+A fim de compararmos a programação declarativa (funcional), com a programação imperativa também implementamos soluções brute force e _divide and conquer_ em Python e em c.
 
 ## Screenshots
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Instalação 
-**Linguagens**: Haskell, C, Python <br>
+**Linguagens**: Haskell, _Pyhon, c_ (opcionais)<br>
 **Tecnologias**: xxxxxx<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-Insira um manual ou um script para auxiliar ainda mais.
+
+Primeiramente tenha a certeza de ter o Haskell instalado. Caso não esteja, siga [esse link](https://www.haskell.org/platform/) para realizar a instalação.
+
+Após ter o Haskell instalado, clone o repositório e entre na pasta src:
+
+    cd src/
+
+E compile o projeto:
+
+    ghc -dynamic --make MainDAC.hs
+
+> O arquivo pode ser o MainBruteForce caso prefira compilar a versão de força bruta. 
+
+Ao final serão gerados diversos arquivos, sendo o principal deles __MainDAC__ (ou MainBruteForce caso o tenha compilado)
+
 
 ## Uso 
-Explique como usar seu projeto, caso haja algum passo a passo após o comando de execução.
+
+Para usar o projeto, primeiro compile-o de acordo com as instruções acima. Depois, num terminal, execute o comando
+
+    ./MainDAC < ../input.txt
+
+Esse comando irá executar o projeto, passando o input especificado no arquivo __input.txt__. A saída esperada (no terminal) deve bater com o que está no arquivo __expected_output.txt__.
+
+Caso prefira inserir a entrada manualmente, você pode executar apenas `./MainDAC` num terminal e inserir dados de acordo com o especificado no [problema do URI](https://www.urionlinejudge.com.br/judge/pt/problems/view/1295).
 
 ## Vídeo
-Adicione 1 ou mais vídeos com a execução do projeto.
+O vídeo de apresentação do projeto se encontra na pasta __assets/Projeto1.mp4__
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas a seguir.
