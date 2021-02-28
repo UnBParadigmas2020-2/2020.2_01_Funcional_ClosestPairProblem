@@ -55,7 +55,10 @@ Caso prefira inserir a entrada manualmente, você pode executar apenas `./MainDA
 O vídeo de apresentação do projeto se encontra na pasta __assets/Projeto1.mp4__
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas a seguir.
+
+A fim de compararmos a programação declarativa (funcional), com a programação imperativa também implementamos soluções brute force e _divide and conquer_ em Python e em c.
+
+As principais diferença notadas entre as programações citadas, é a falta de estruturas de repetição na programação declarativa, o uso consntante de funções, listas e recursões, lazy evalution e dados imutáveis, sendo que na programação imperativa nós descrevemos o comportamento de um dado algoritimo, temos estruturas de repetição, strict evalution, uso de váriaveis entre outros. As implementações imperativas também se encontram disponíves no nosso repositório na pasta solucao_imperativa.
 
 ## Fontes
 - [https://github.com/projeto-de-algoritmos/D-C_Closest_pair_problem](https://github.com/projeto-de-algoritmos/D-C_Closest_pair_problem)
