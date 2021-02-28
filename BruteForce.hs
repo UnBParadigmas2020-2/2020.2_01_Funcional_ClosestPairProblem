@@ -5,12 +5,12 @@ module BruteForce
 
 import PointUtils (Point(..), euclidianDistance)
 
-calcDistanceFromVector :: Point -> [Point] -> Float
+calcDistanceFromVector :: Point -> [Point] -> Double
 calcDistanceFromVector point [] =  10001
 calcDistanceFromVector point [pointb] =  euclidianDistance point pointb
 calcDistanceFromVector point pointList =  minimum [ euclidianDistance point pointB | pointB <- pointList]
 
-calcClosestDistanceFromInputBruteForce :: [Point] -> Float
+calcClosestDistanceFromInputBruteForce :: [Point] -> Double
 calcClosestDistanceFromInputBruteForce [] =  10001
 calcClosestDistanceFromInputBruteForce [points] =  10001
 calcClosestDistanceFromInputBruteForce points =  minimum (calcDistanceFromVector x y : [calcClosestDistanceFromInputBruteForce y])
