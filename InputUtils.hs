@@ -5,7 +5,7 @@ import PointUtils (Point(..), convertInputToPoint)
 getAllEntries:: [String] -> [Point]
 getAllEntries values = map convertInputToPoint values
 
-getMultipleLines :: Int -> IO [String]
+getMultipleLines :: Double -> IO [String]
 getMultipleLines n
     | n <= 0 = return []
     | otherwise = do
