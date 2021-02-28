@@ -6,7 +6,7 @@ import PointUtils (Point(..), sortByY, euclidianDistance, sortByX)
 import ClosestPair (getMiddleIndexFromList, halveArray, getMiddleItemFromList)
 import BruteForce (calcClosestDistanceFromInputBruteForce)
 
-calcClosestDistanceFromInputDAC :: [Point] -> (Float, [Point])
+calcClosestDistanceFromInputDAC :: [Point] -> (Double, [Point])
 calcClosestDistanceFromInputDAC [] =  (10001, [])
 calcClosestDistanceFromInputDAC [points] =  (10001, [points])
 calcClosestDistanceFromInputDAC points =  (realMin, s)
@@ -22,7 +22,7 @@ calcClosestDistanceFromInputDAC points =  (realMin, s)
         (left, right) = halveArray(points)
 
 
-getLeastDistanceIfLowerThan:: Float -> Point -> [Point] -> [Point]
+getLeastDistanceIfLowerThan:: Double -> Point -> [Point] -> [Point]
 getLeastDistanceIfLowerThan _ _ [] = []
 getLeastDistanceIfLowerThan distance median [a] = isLowerThanMinimum distance (y median) a 
 getLeastDistanceIfLowerThan distance median points = 
@@ -30,7 +30,7 @@ getLeastDistanceIfLowerThan distance median points =
     where
         (firstPoint:tail) = points
 
-isLowerThanMinimum:: Float -> Float -> Point -> [Point]
+isLowerThanMinimum:: Double -> Double -> Point -> [Point]
 isLowerThanMinimum distance median pointN = 
     if (euclidianDistance pointN pointB) < distance 
         then [pointN]
