@@ -1,4 +1,4 @@
-# NomeDoProjeto
+# The closest Pair Problem
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
 **Nro do Grupo**: 01<br>
@@ -17,11 +17,13 @@ Nosso grupo propos a implementação do código que resolve o problema clássico
 
 Tivemos como referência os codigos presentes nesse repositório na pasta solucao_imperativa, nas linguagens python e C, ambos fornecidos pelo integrante Elias, que já havia resolvido o problema antes na disciplina de Projeto de Algoritmos. Implementamos a solução de duas formas diferentes, utilizando a força bruta, que possui complexidade O(n^2) e a estratégia de dividir para conquistar complexidade O(n log n).
 
+ A fim de compararmos a programação declarativa (funcional), com a programação imperativa também implemetamos soluções brute force e divid and conquer em Python e em c.
+
 ## Screenshots
 Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
 
 ## Instalação 
-**Linguagens**: xxxxxx<br>
+**Linguagens**: Haskell, C, Python <br>
 **Tecnologias**: xxxxxx<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 Insira um manual ou um script para auxiliar ainda mais.
