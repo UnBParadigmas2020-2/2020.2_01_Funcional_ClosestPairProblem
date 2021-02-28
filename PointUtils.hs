@@ -9,9 +9,9 @@ module PointUtils
 
 import Data.List (sortOn)
 
-data Point = Point { x :: Float, y :: Float } deriving (Eq, Ord, Show)
+data Point = Point { x :: Double, y :: Double } deriving (Eq, Ord, Show)
 
-euclidianDistance :: Point -> Point -> Float
+euclidianDistance :: Point -> Point -> Double
 euclidianDistance p1 p2 = sqrt (dx*dx + dy*dy)
     where
         dx = x p1 - x p2
@@ -29,6 +29,6 @@ convertInputToPoint input = Point x y
         x = convertStringToFLoat $ head $ words input
         y = convertStringToFLoat $ last $ words input
 
-convertStringToFLoat:: String -> Float
-convertStringToFLoat str = read str :: Float
+convertStringToFLoat:: String -> Double
+convertStringToFLoat str = read str :: Double
 
