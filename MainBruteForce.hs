@@ -7,7 +7,7 @@ main = do
     if (read entries :: Float) == 0
     then return()
     else do
-        entriesInput <- getMultipleLines (read entries :: Int)
+        entriesInput <- getMultipleLines (read entries :: Double)
         let inputPoints = getAllEntries entriesInput
         let result = calcClosestDistanceFromInputBruteForce inputPoints
         if result > 10000 
