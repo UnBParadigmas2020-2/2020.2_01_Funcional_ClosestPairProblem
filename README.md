@@ -20,7 +20,7 @@ Tivemos como referência os códigos presentes nesse repositório na pasta __sol
 A fim de compararmos a programação declarativa (funcional), com a programação imperativa também implementamos soluções brute force e _divide and conquer_ em Python e em c.
 
 ## Screenshots
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+As screenshots com apresentação do funcionamento do projeto se encontram em __assets/funcionamento.jpg__ e __assets/funcionamento_2.jpg__
 
 ## Instalação 
 **Linguagens**: Haskell, _Pyhon, c_ (opcionais)<br>
