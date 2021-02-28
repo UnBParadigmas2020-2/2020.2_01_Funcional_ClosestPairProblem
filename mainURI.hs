@@ -69,11 +69,11 @@ sortByY = sortWith y
 convertInputToPoint:: String -> Point
 convertInputToPoint input = Point x y
     where
-        x = convertStringToFLoat $ head $ words input
-        y = convertStringToFLoat $ last $ words input
+        x = convertStringToDouble $ head $ words input
+        y = convertStringToDouble $ last $ words input
 
-convertStringToFLoat:: String -> Double
-convertStringToFLoat str = read str :: Double
+convertStringToDouble:: String -> Double
+convertStringToDouble str = read str :: Double
 
 
 getMiddleIndexFromList :: [a] -> Int
