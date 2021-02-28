@@ -1,4 +1,4 @@
-module DivideAndConquer (calcClosestDistanceFromInputDAC, divideAndConquer) where
+module DivideAndConquer (calcClosestDistanceFromInputDAC) where
 
 import Debug.Trace
 
