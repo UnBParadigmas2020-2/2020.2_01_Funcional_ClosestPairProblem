@@ -4,7 +4,7 @@ module PointUtils
 , sortByX
 , sortByY
 , convertInputToPoint
-, convertStringToFLoat
+, convertStringToDouble
 ) where
 
 import Data.List (sortOn)
@@ -26,8 +26,8 @@ sortByY = sortOn y
 convertInputToPoint:: String -> Point
 convertInputToPoint input = Point x y
     where
-        x = convertStringToFLoat $ head $ words input
-        y = convertStringToFLoat $ last $ words input
+        x = convertStringToDouble $ head $ words input
+        y = convertStringToDouble $ last $ words input
 
 convertStringToFDouble:: String -> Double
 convertStringToDouble str = read str :: Double
