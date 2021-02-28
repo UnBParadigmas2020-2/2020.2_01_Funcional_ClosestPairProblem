@@ -29,6 +29,6 @@ convertInputToPoint input = Point x y
         x = convertStringToDouble $ head $ words input
         y = convertStringToDouble $ last $ words input
 
-convertStringToFDouble:: String -> Double
+convertStringToDouble:: String -> Double
 convertStringToDouble str = read str :: Double
 
