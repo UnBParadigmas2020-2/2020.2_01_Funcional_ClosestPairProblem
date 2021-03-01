@@ -20,7 +20,22 @@ Tivemos como referência os códigos presentes nesse repositório na pasta __sol
 A fim de compararmos a programação declarativa (funcional), com a programação imperativa também implementamos soluções brute force e _divide and conquer_ em Python e em c.
 
 ## Screenshots
-As screenshots com apresentação do funcionamento do projeto se encontram em __assets/funcionamento.jpg__ e __assets/funcionamento_2.jpg__
+
+Funcionamento no terminal:
+
+![](./assets/funcionamento.jpg)
+
+
+![](./assets/funcionamento_2.jpg)
+
+Execução do binário com o input fornecido (e comparação com o output esperado):
+
+![](./assets/funcionamento_3.png)
+
+Envio da solução no URI:
+
+![](./assets/uri.jpeg)
+
 
 ## Instalação 
 **Linguagens**: Haskell, _Pyhon, c_ (opcionais)<br>
@@ -58,7 +73,7 @@ O vídeo de apresentação do projeto se encontra na pasta __assets/Projeto1.mp4
 
 A fim de compararmos a programação declarativa (funcional), com a programação imperativa também implementamos soluções brute force e _divide and conquer_ em Python e em c.
 
-As principais diferença notadas entre as programações citadas, é a falta de estruturas de repetição na programação declarativa, o uso consntante de funções, listas e recursões, lazy evalution e dados imutáveis, sendo que na programação imperativa nós descrevemos o comportamento de um dado algoritimo, temos estruturas de repetição, strict evalution, uso de váriaveis entre outros. As implementações imperativas também se encontram disponíves no nosso repositório na pasta solucao_imperativa.
+As principais diferença notadas entre as programações citadas, é a falta de estruturas de repetição na programação declarativa, o uso constante de funções, listas e recursões, lazy evalution e dados imutáveis, sendo que na programação imperativa nós descrevemos o comportamento de um dado algoritimo, temos estruturas de repetição, strict evalution, uso de váriaveis entre outros. As implementações imperativas também se encontram disponíves no nosso repositório na pasta solucao_imperativa.
 
 ## Fontes
 - [https://github.com/projeto-de-algoritmos/D-C_Closest_pair_problem](https://github.com/projeto-de-algoritmos/D-C_Closest_pair_problem)
