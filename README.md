@@ -38,20 +38,27 @@ Envio da solução no URI:
 
 
 ## Instalação 
-**Linguagens**: Haskell, _Pyhon, c_ (opcionais)<br>
-**Tecnologias**: xxxxxx<br>
+**Linguagens**: Haskell, _Python, c_ (opcionais)<br>
 
-Primeiramente tenha a certeza de ter o Haskell instalado. Caso não esteja, siga [esse link](https://www.haskell.org/platform/) para realizar a instalação.
+**Pré-requisitos**:
+* Linguagem Haskell
+* Compilador GHC
 
-Após ter o Haskell instalado, clone o repositório e entre na pasta src:
+Primeiramente tenha a certeza de ter o Haskell e o compilador GCH instalado. Caso não esteja, siga [esse link](https://www.haskell.org/platform/) para realizar a instalação.
 
-    cd src/
+Após a instalação, clone o repositório e entre na pasta "src":
+
+    $ git clone https://github.com/UnBParadigmas2020-2/2020.2_G1_Funcional_ClosestPairProblem.git
+
+    $ cd 2020.2_G1_Funcional_ClosestPairProblem/src/
 
 E compile o projeto:
 
-    ghc -dynamic --make MainDAC.hs
+    $ ghc -dynamic --make MainDAC.hs
 
-> O arquivo pode ser o MainBruteForce caso prefira compilar a versão de força bruta. 
+> O arquivo pode ser o MainBruteForce caso prefira compilar a versão de força bruta.
+
+    $ ghc -dynamic --make MainBruteForce.hs
 
 Ao final serão gerados diversos arquivos, sendo o principal deles __MainDAC__ (ou MainBruteForce caso o tenha compilado)
 
@@ -60,7 +67,7 @@ Ao final serão gerados diversos arquivos, sendo o principal deles __MainDAC__ (
 
 Para usar o projeto, primeiro compile-o de acordo com as instruções acima. Depois, num terminal, execute o comando
 
-    ./MainDAC < ../input.txt
+    $ ./MainDAC < ../input.txt
 
 Esse comando irá executar o projeto, passando o input especificado no arquivo __input.txt__. A saída esperada (no terminal) deve bater com o que está no arquivo __expected_output.txt__.
 
