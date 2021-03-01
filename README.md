@@ -84,3 +84,4 @@ As principais diferença notadas entre as programações citadas, é a falta de 
 
 ## Fontes
 - [https://github.com/projeto-de-algoritmos/D-C_Closest_pair_problem](https://github.com/projeto-de-algoritmos/D-C_Closest_pair_problem)
+- [https://hoogle.haskell.org](https://hoogle.haskell.org/)
